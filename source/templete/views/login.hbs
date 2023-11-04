@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Chamunda Tailor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            color: lightseagreen;
+            background: linear-gradient(to right bottom, lightcoral, lightseagreen);
+        }
+
+        .container {
+            color: black;
+            width: 28%;
+        }
+
+        .container h1 {
+            font-size: 40px;
+            border-bottom: 4px solid purple;
+            margin-bottom: 20px;
+            padding: 10px 0px;
+            display: inline-block;
+            font-family: 'Lora', serif;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .box {
+            width: 100%;
+            border-bottom: 2px solid purple;
+            margin: 30px 0px;
+        }
+
+        .box input {
+            color: black;
+            background: none;
+            width: 75%;
+            padding: 4px;
+            border-radius: 5px;
+            font-size: 21px;
+            border: none;
+            outline: none;
+        }
+
+        .box i {
+            width: 30px;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .btn {
+            font-family: 'Lora', serif;
+            font-family: 'Playfair Display', serif;
+            cursor: pointer;
+            margin: 8px 0px;
+            border-radius: 10px;
+            background-color: transparent;
+            color: black;
+            border: 3px solid purple;
+            padding: 6px 15px;
+            outline: none;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            opacity: 0.7;
+            color: purple;
+            background-color: black;
+        }
+
+        @media (min-width:280px) and (max-width:500px) {
+            .container h1 {
+                width: 130px;
+                font-size: 30px;
+            }
+
+            .box {
+                width: 150px;
+            }
+
+            .btn {
+                width: 80px;
+                font-size: 13px;
+            }
+
+            .box input {
+                width: 140px;
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:1000px) {
+            .container h1 {
+                width: 150px;
+                font-size: 40px;
+            }
+
+            .box {
+                width: 250px;
+            }
+
+            .btn {
+                width: 100px;
+                font-size: 18px;
+            }
+
+            .box input {
+                width: 200px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/login" method="post">
+            <h1>Login In</h1>
+            <div class="box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="box">
+                <i class="fa fa-lock "></i>
+                <input type="password" name="password" placeholder="Enter Your password">
+            </div>
+            <button class="btn" type="submit">Sign In</button>
+        </form>
+    </div>
+</body>
+
+</html>
